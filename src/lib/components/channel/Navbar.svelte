@@ -7,7 +7,7 @@
 	import { slide } from 'svelte/transition';
 	import { page } from '$app/stores';
 
-	import { WEBUI_API_BASE_URL } from '$lib/constants';
+	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 
 	import UserMenu from '$lib/components/layout/Sidebar/UserMenu.svelte';
 	import PencilSquare from '../icons/PencilSquare.svelte';
@@ -54,6 +54,15 @@
 <PinnedMessagesModal bind:show={showChannelPinnedMessagesModal} {channel} {onPin} />
 <ChannelInfoModal bind:show={showChannelInfoModal} {channel} {onUpdate} />
 <nav class="sticky top-0 z-30 w-full px-1.5 py-1 -mb-8 flex items-center drag-region flex flex-col">
+	<div class="pointer-events-none absolute inset-x-0 top-2 flex justify-center px-16">
+		<img
+			src="{WEBUI_BASE_URL}/static/splash.png"
+			class="h-8 w-auto max-w-[14rem] object-contain opacity-95"
+			alt="Channel navigation logo"
+			draggable="false"
+		/>
+	</div>
+
 	<div
 		id="navbar-bg-gradient-to-b"
 		class=" bg-linear-to-b via-50% from-white via-white to-transparent dark:from-gray-900 dark:via-gray-900 dark:to-transparent pointer-events-none absolute inset-0 -bottom-7 z-[-1]"

@@ -890,26 +890,17 @@
 				class="sidebar px-[0.5625rem] pt-2 pb-1.5 flex justify-between space-x-1 text-gray-600 dark:text-gray-400 sticky top-0 z-10 -mb-3"
 			>
 				<a
-					class="flex items-center rounded-xl size-8.5 h-full justify-center hover:bg-gray-100/50 dark:hover:bg-gray-850/50 transition no-drag-region"
 					href="/"
+					class="flex flex-1 items-center rounded-2xl px-2 py-1 hover:bg-gray-100/50 dark:hover:bg-gray-850/50 transition no-drag-region"
 					draggable="false"
 					on:click={newChatHandler}
 				>
 					<img
 						crossorigin="anonymous"
-						src="{WEBUI_BASE_URL}/static/favicon.png"
-						class="sidebar-new-chat-icon size-6 rounded-full"
-						alt=""
+						src="{WEBUI_BASE_URL}/static/splash.png"
+						class="h-8 w-auto max-w-[10rem] object-contain"
+						alt="{$WEBUI_NAME}"
 					/>
-				</a>
-
-				<a href="/" class="flex flex-1 px-1.5" on:click={newChatHandler}>
-					<div
-						id="sidebar-webui-name"
-						class=" self-center font-medium text-gray-850 dark:text-white font-primary"
-					>
-						{$WEBUI_NAME}
-					</div>
 				</a>
 				<Tooltip
 					content={$showSidebar ? $i18n.t('Close Sidebar') : $i18n.t('Open Sidebar')}

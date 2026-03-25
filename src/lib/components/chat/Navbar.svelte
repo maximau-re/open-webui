@@ -38,7 +38,7 @@
 	import ChatPlus from '../icons/ChatPlus.svelte';
 	import ChatCheck from '../icons/ChatCheck.svelte';
 	import Knobs from '../icons/Knobs.svelte';
-	import { WEBUI_API_BASE_URL } from '$lib/constants';
+	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 
 	const i18n = getContext('i18n');
 
@@ -77,6 +77,15 @@
 		? 'pt-0.5 pb-1'
 		: 'pt-1 pb-1'} -mb-12 flex flex-col items-center drag-region"
 >
+	<div class="pointer-events-none absolute inset-x-0 top-2 flex justify-center px-16">
+		<img
+			src="{WEBUI_BASE_URL}/static/splash.png"
+			class="h-8 w-auto max-w-[14rem] object-contain opacity-95"
+			alt="{$WEBUI_NAME}"
+			draggable="false"
+		/>
+	</div>
+
 	<div class="flex items-center w-full pl-1.5 pr-1">
 		<div
 			id="navbar-bg-gradient-to-b"
