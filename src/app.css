@@ -1,5 +1,9 @@
 @reference "./tailwind.css";
 
+* {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
 @font-face {
 	font-family: 'Inter';
 	src: url('/assets/fonts/Inter-Variable.ttf');
