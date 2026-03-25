@@ -26,7 +26,7 @@ We appreciate the community's interest in identifying potential vulnerabilities.
 
 2. **No Vague Reports**: Submissions such as "I found a vulnerability" without any details will be treated as spam and will not be accepted.
 
-3. **In-Depth Understanding**: Reports must reflect a clear understanding of the codebase, how Open WebUI is used and provide specific details about the vulnerability, including the affected components and potential impacts.
+3. **In-Depth Understanding**: Reports must reflect a clear understanding of the codebase, how RETHINQ is used and provide specific details about the vulnerability, including the affected components and potential impacts.
 
 4. **Proof of Concept (PoC) is Mandatory**: Each submission must include a well-documented proof of concept (PoC) that demonstrates the vulnerability. If confidentiality is a concern, reporters are encouraged to create a private fork of the repository and share access with the maintainers. Reports lacking valid evidence may be disregarded.
 
@@ -59,7 +59,7 @@ Your remediation guidance can include, for example:
 - The **recommended fix approach** (validation/sanitization rules, auth checks, safe defaults, etc.)
 - Any **security tradeoffs** or potential regressions to watch for
 
-6. **Default Configuration Testing**: All vulnerability reports must be tested and reproducible using Open WebUI's out-of-the-box default configuration. Claims of vulnerabilities that only manifest with explicitly weakened security settings may be discarded, unless they are covered by the following exception:
+6. **Default Configuration Testing**: All vulnerability reports must be tested and reproducible using RETHINQ's out-of-the-box default configuration. Claims of vulnerabilities that only manifest with explicitly weakened security settings may be discarded, unless they are covered by the following exception:
 
 > [!NOTE]  
 > **Note**: If you believe you have found a security issue that
@@ -68,7 +68,7 @@ Your remediation guidance can include, for example:
 > 2. represents a genuine bypass of intended security controls, **or**
 > 3. works only with non-default configurations, **but the configuration in question is likely to be used by production deployments**, **then we absolutely want to hear about it.** This policy is intended to filter configuration issues and deployment problems, not to discourage legitimate security research.
 
-7. **Threat Model Understanding Required**: Reports must demonstrate understanding of Open WebUI's self-hosted, authenticated, extensible, role-based access control architecture. Comparing Open WebUI to services with fundamentally different security models without acknowledging the architectural differences may result in report rejection.
+7. **Threat Model Understanding Required**: Reports must demonstrate understanding of RETHINQ's self-hosted, authenticated, extensible, role-based access control architecture. Comparing RETHINQ to services with fundamentally different security models without acknowledging the architectural differences may result in report rejection.
 
 8. **CVSS Scoring Accuracy:** If you include a CVSS score with your report, it must accurately reflect the vulnerability according to CVSS methodology. Common errors include 1) rating PR:N (None) when authentication is required, 2) scoring hypothetical attack chains instead of the actual vulnerability, or 3) inflating severity without evidence. **We will adjust inaccurate CVSS scores.** Intentionally inflated scores may result in report rejection.
 
@@ -87,7 +87,7 @@ Your remediation guidance can include, for example:
 > [!NOTE]
 > AI-aided vulnerability reports **will not be rejected by us by default**. But:
 >
-> - If we suspect you used AI (but you did not disclose it to us), we will be asking thorough follow-up questions to validate your understanding of the reported vulnerability and Open WebUI itself.
+> - If we suspect you used AI (but you did not disclose it to us), we will be asking thorough follow-up questions to validate your understanding of the reported vulnerability and RETHINQ itself.
 > - If we suspect you used AI (but you did not disclose it to us) **and** your report ends up being invalid/not a vulnerability/not reproducible, then you **may be banned** from reporting future vulnerabilities.
 >
 > This measure was necessary due to the extreme rise in clearly AI written vulnerability reports, where the vast majority of them
@@ -96,7 +96,7 @@ Your remediation guidance can include, for example:
 > - were faulty configurations rather than a real vulnerability
 > - did not provide a PoC
 > - violated any of the rules outlined here
-> - had a clear lack of understanding of Open WebUI
+> - had a clear lack of understanding of RETHINQ
 > - wrote comments with conflicting information
 > - used illogical and conflicting arguments
 
